@@ -18,7 +18,11 @@ public class Question4
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.print("Enter an integer: ")
+    int int1 = in.nextInt();
+    while (int1 != 0){
+      starsnum = int1;
+      System.out.println()
+    }
 
     in.close();
     
