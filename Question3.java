@@ -16,7 +16,7 @@ public class Question3
     int int1 = in.nextInt();
     int int2 = int1 * int1;
 
-    System.out.println("Your new interger is: " + int2);
+    System.out.println("Your new integer is: " + int2);
     in.close();
   }
 }
