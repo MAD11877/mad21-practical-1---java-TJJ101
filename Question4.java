@@ -18,10 +18,9 @@ public class Question4
      */
      
     Scanner in = new Scanner(System.in);
-    int int1 = in.nextInt();
+    int row = in.nextInt();
     while (int1 != 0){
-      starsnum = int1;
-      System.out.println()
+      
     }
 
     in.close();
