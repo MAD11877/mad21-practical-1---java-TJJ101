@@ -27,6 +27,21 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
+    int loop = in.nextInt();
+    int mode = 0;
+    while(loop > 0){
+      int num = in.nextInt();
+      if(num > mode){
+        mode = num;
+        loop -= 1;
+        continue;
+      }
+      else{
+        loop -=1;
+        continue;
+      }
+    }
+    System.out.println(mode);
+    in.close();
   }
 }
