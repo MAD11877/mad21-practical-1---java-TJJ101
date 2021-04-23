@@ -17,9 +17,9 @@ public class Question2
     //System.out.print("Enter your weight(kg): ");
     double weight = in.nextDouble();
 
-    double BMI = weight/ (height*height);
+    double bmi = weight/ (height*height);
     //System.out.print("Your BMI is : ");
-    System.out.printf("%.1f\n", BMI);
+    System.out.printf("%.1f\n", bmi);
     in.close();
   }
 }
