@@ -25,8 +25,40 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-     
     Scanner in = new Scanner(System.in);
-    
+	  int start = in.nextInt(),x;
+	  int [] values = new int[start];
+	  int [] check =new int[start];
+	  for(int a=0;a<start;a++) {
+		  values[a]=in.nextInt();
+		}
+	  {
+	    for(int a=0;a<start;a++) {   
+        x=1;
+        if(values[a]==-1){
+          check[a]=0;
+        }
+        else{
+          for(int b=a+1;b<start;b++) 
+	      {
+		      if(values[a]==values[b]){
+            x++;
+            values[b]=-1;
+          }         
+	      }
+          check[a]=x;
+        }
+	    }
+      int num=check[0];
+      for(int i=1;i<start;i++){
+	      if(check[i]>=num)
+          num=check[i];   	
+	    }
+	    for(int i=0;i<start;i++){
+	      if(check[i]==num)
+          System.out.println(values[i]);
+	    }
+	  }
+    in.close();
   }
 }

@@ -12,5 +12,12 @@ public class Question3
      
     Scanner in = new Scanner(System.in);
     
+    //System.out.print("Enter an integer: ");
+    int numin = in.nextInt();
+    int numout = numin * numin;
+
+    //System.out.println("Your new integer is: " + int2);
+    System.out.println(numout);
+    in.close();
   }
 }
